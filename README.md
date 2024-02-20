@@ -55,7 +55,7 @@ curl --proto '=https' --tlsv1.2 -sSfL https://github.com/dusk-network/itn-instal
 -1100 adet tDusk gelecek cüzdanınızı kontrol edin(yogunluktan dolayı 4-12 saat arasında gelebiliyor tokenler)
 
 - Aşağıdaki komutu girin ve cüzdan kelimelerinizi yazarak giriş yapın.
-- 
+  
 - Not:Cüzdan kelimeleri ingilizce karakter ve hepsi küçük harfle olmalı.
   
 - Şifrenizi belirleyin
