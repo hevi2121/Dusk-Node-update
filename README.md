@@ -1,4 +1,6 @@
-# dusk-node-güncel
+# Dusk-Node-güncel
+
+(google could hatası çözümlü)
 
 ÖDÜL DURUMU
 
@@ -19,7 +21,8 @@ Dusk teşvikli Node kurulum işlemi. Ödül alabilmeniz için;
  
 
 
-##Gereksinimler
+## Gereksimler
+
 | 2-4 Gb Ram  | Ubuntu 22.04 |  50-100 Gb SSD | 
 | ----------------- | ----------------- | ----------------- |
 
