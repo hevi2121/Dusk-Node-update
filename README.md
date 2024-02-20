@@ -126,6 +126,7 @@ curl --location --request POST 'http://127.0.0.1:8080/02/Chain' --header 'Rusk-V
     "topic": "gql",
     "data": "query { block(height: -1) { header { height } } }"
 }' | jq '.block.header.height'
+```
 
 
 
