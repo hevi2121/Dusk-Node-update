@@ -34,8 +34,9 @@ curl --proto '=https' --tlsv1.2 -sSfL https://github.com/dusk-network/itn-instal
 ## Cüzdan oluşturma ve Faucet işlemi 
 Discord gidin duyuru kanalına giderek sağ üst tarafta insan logosuna tıklayın
 Botu bulun ve !Dusk komutunu yazın ve sizden cüzdan adresi isteyecek cüzdan adresinizi yazın
-1100 adet tDsuk gelecek cüzdanınızı kontrol edin(yogunluktan dolayı 4-12 saat arasında gelebiliyor tokenler)
+1100 adet tDusk gelecek cüzdanınızı kontrol edin(yogunluktan dolayı 4-12 saat arasında gelebiliyor tokenler)
 - Aşağıdaki komutu girin ve cüzdan kelimelerinizi yazarak giriş yapın.
+- Not:Cüzdan kelimeleri ingilizce karakter ve hepsi küçük harfle olmalı.
 - Şifrenizi belirleyin
   
 - Şifre tekrar girin
@@ -60,12 +61,16 @@ sh /opt/dusk/bin/setup_consensus_pwd.sh
 ##Port Ayarı İşlemleri
 
 #Sanal Sunucuda Yapılacak Port Ayarları 
-sanal makinenizden vpc network-firewall kısmını tıklayın(google could) 
+-sanal makinenizden vpc network-firewall kısmını tıklayın(google could) 
 (Not:Diğer farklı şirket sunucuları olanlar güvenlik duvarı ayarlarına girecek)
-Create firewal Rule(güvenlik duvarı kuralı olustur) tıklayın
-Giriş(Ingress) ve çıkış(Egress) her iki trafik yönü için 0.0.0.0/0 filtreli  tcp:8080 udp:9000 olacak şekilde güvenlik duvarı kuralı olsuturun tags kesinlikle vermelisiniz örnek girişe dusk1 çıkışa dusk2 ismini verin 
-verilen tagsları sanal sunucunuzda network tags bölümüne dusk1 ve dusk2  olusturuduğunuz tagsları yazın
 
+-Create firewal Rule(güvenlik duvarı kuralı olustur) tıklayın
+
+-Giriş(Ingress) ve çıkış(Egress) her iki trafik yönü için 0.0.0.0/0 filtreli  tcp:8080 udp:9000 olacak şekilde güvenlik duvarı kuralı olsuturun.
+
+-tags kesinlikle vermelisiniz örnek girişe dusk1 çıkışa dusk2 ismini verin 
+verilen tagsları sanal sunucunuzda network tags bölümüne dusk1 ve dusk2  olusturuduğunuz tagsları yazın
+-
 ##Terminalde Yapılacak Port Ayarları
 
 
