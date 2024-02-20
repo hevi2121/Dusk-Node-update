@@ -111,15 +111,41 @@ KADCAST_PUBLIC_ADDRESS=34.168.241.213:9000
 
 KADCAST_LISTEN_ADDRESS=10.138.0.6:9000
 
-- Servisi Çalıştırın
+## Servisi Çalıştırın
 
 ```shell
 service rusk start
 ```
 
+## Update İşlemi Yapın
+
+
+-Günceleme 
+```shell
+curl --proto '=https' --tlsv1.2 -sSfL https://github.com/dusk-network/itn-installer/releases/download/v0.1.1/itn-installer.sh | sudo sh
+
+```
+
+2-Çalıştırma
+
+```shell
+service rusk start
+
+```
+
+-Log kontrol
+
+```shell
+tail -F /var/log/rusk.log
+
+```
+
+
+
+
 ## Senkronizasyon Kontrol
 
-Aşağıdaki kodu direk sunucuya yapıştırın bloklar yükseliyormu kontrol edin.
+Aşağıdaki kodu direk sunucuya yapıştırın bloklar yükseliyormu kontrol edin.Expolrerden karşılaştırma yapın
 
 ```shell
 curl --location --request POST 'http://127.0.0.1:8080/02/Chain' --header 'Rusk-Version: 0.7.0-rc' --header 'Content-Type: application/json' --data-raw '{
@@ -127,6 +153,8 @@ curl --location --request POST 'http://127.0.0.1:8080/02/Chain' --header 'Rusk-V
     "data": "query { block(height: -1) { header { height } } }"
 }' | jq '.block.header.height'
 ```
+
+*https://explorer.dusk.network/
 
 
 
