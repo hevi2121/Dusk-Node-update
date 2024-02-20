@@ -1,5 +1,5 @@
 # dusk-node-güncel
-Kurulum
+
 #Ödül durumu
 Dusk teşvikli Node kurulum işlemi. Ödül alabilmeniz için;
 20 Şubat itibarıyla düğümlerin çalışır durumda olması gerekiyor. Bu, "sayıldığı" ve çalışma süresinin kaydedileceği zamandır
