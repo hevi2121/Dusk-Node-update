@@ -115,9 +115,9 @@ nano /opt/dusk/services/rusk.conf.user
 ```
 
 
-screen açılacak 
+-screen açılacak 
 
-screende açılan ip ayarlarında 
+-screende açılan ip ayarlarında 
 
 -kodların başındaki # (tag)  işretlerini silin 
 
@@ -168,7 +168,7 @@ tail -F /var/log/rusk.log
 
 ## Senkronizasyon Kontrol
 
-Aşağıdaki kodu direk sunucuya yapıştırın bloklar yükseliyormu kontrol edin.Expolrerden karşılaştırma yapın
+Aşağıdaki kodu direk sunucuya yapıştırın bloklar yükseliyor mu? Kontrol edin.Expolrerden karşılaştırma yapın.
 
 ```shell
 curl --location --request POST 'http://127.0.0.1:8080/02/Chain' --header 'Rusk-Version: 0.7.0-rc' --header 'Content-Type: application/json' --data-raw '{
@@ -196,7 +196,7 @@ rusk-wallet stake --amt 1000 # Or however much you want to stake
 ```
 
 - Stake  30 block onayı verecek ve stake işlemi tamamlanacak tx vererecek.
-- 
+ 
 
 ## Stake işlemleri Kontrol
 
@@ -208,7 +208,7 @@ adres verecek ve sağ altta 1000 adet stake etiğniz görünecek
 
 node kurulum ve update işlemimiz bitmiştir.
 
-Hercules nodeye ve
+Hercules Nodeye ve
 
-core node ekibine teşekkürler...
+Core Node ekibine teşekkürler...
 
