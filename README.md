@@ -60,7 +60,7 @@ sh /opt/dusk/bin/setup_consensus_pwd.sh
 
 ## Port Ayarı İşlemleri
 
--Sanal Sunucuda Yapılacak Port Ayarları 
+## 1.Sunucu Port Ayarı
 
 -sanal makinenizden vpc network-firewall kısmını tıklayın(google could) 
 (Not:Diğer farklı şirket sunucuları olanlar güvenlik duvarı ayarlarına girecek)
@@ -69,10 +69,40 @@ sh /opt/dusk/bin/setup_consensus_pwd.sh
 
 -Giriş(Ingress) ve çıkış(Egress) her iki trafik yönü için 0.0.0.0/0 filtreli  tcp:8080 udp:9000 olacak şekilde güvenlik duvarı kuralı olsuturun.
 
--tags kesinlikle vermelisiniz örnek girişe dusk1 çıkışa dusk2 ismini verin 
-verilen tagsları sanal sunucunuzda network tags bölümüne dusk1 ve dusk2  olusturuduğunuz tagsları yazın
+-tags kesinlikle vermelisiniz!!! örnek olarak girişe dusk1, çıkışa dusk2 ismini verin.
+-verilen tagsları sanal sunucunuzda network tags bölümüne dusk1 ve dusk2  olusturuduğunuz tagsları yazın
 -
-##Terminalde Yapılacak Port Ayarları
+## 2.Terminal Port Ayarı
 
+komutu girin ufw nin aktif olup olmadığını kontrol edin 
+
+```shell
+ufw status
+```
+
+'ufw incantive' çıktısıaldıysanız devam edin,eğer ufw active çıktısı aldıysanız aşağıdaki kodu girin
+
+```shell
+ufw disable
+```
+aşağıdaki komutu girin 
+
+```shell
+nano /opt/dusk/services/rusk.conf.user
+```
+
+
+screen açılacak 
+
+screende açılan ip ayarlarında 
+
+-kodların başındaki # (tag)  işretlerini silin 
+
+-public-ip silin ve yerine harici ip(External IP) yazın 
+
+-private-ip silip yerine dahili ip(Internal IP) yazın
+
+#KADCAST_PUBLIC_ADDRESS=public-ip:9000
+#KADCAST_LISTEN_ADDRESS=private-ip:9000
 
 
