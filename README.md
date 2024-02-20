@@ -183,12 +183,32 @@ curl --location --request POST 'http://127.0.0.1:8080/02/Chain' --header 'Rusk-V
 
 ## Stake işlemleri
 
+-nodeniz güncelse (update yaptıysanız) ve syn ise (explorer deki block ile nodedeki block aynı ise) stake işlemine geçin
+
+Faucetten token gelip gelmediğini cüzdanınızdan kontrol ediniz.
+
+
+
 - Cüzdanınıza Faucet üzerinden 1000 tDusk aldıysanız aşağıdaki komutu girerek stake işlemini başlatın
 
 ```shell
 rusk-wallet stake --amt 1000 # Or however much you want to stake
 ```
 
-- Stake sonrası aşağıdaki gibi bir ekran gelecek 30 block onayı verecek
+- Stake  30 block onayı verecek ve stake işlemi tamamlanacak tx vererecek.
+- 
 
+## Stake işlemleri Kontrol
+
+```shell
+rusk-wallet stake-info
+```
+
+adres verecek ve sağ altta 1000 adet stake etiğniz görünecek
+
+node kurulum ve update işlemimiz bitmiştir.
+
+Hercules nodeye ve
+
+core node ekibine teşekkürler...
 
