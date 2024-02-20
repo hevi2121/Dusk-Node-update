@@ -103,7 +103,7 @@ komutu girin ufw nin aktif olup olmadığını kontrol edin
 ufw status
 ```
 
-'ufw incantive' çıktısı aldıysanız 08 nolu koddan devam devam edin;eğer ufw active çıktısı aldıysanız önce 59 nolu kod daha sonra 08 nolu koddan devam edin.
+'ufw incantive' çıktısı aldıysanız 08 nolu koddan  devam edin;eğer ufw active çıktısı aldıysanız önce 59 nolu kod daha sonra 08 nolu koddan devam edin.
 
 59 nolu kod:aşağıdaki kodu girin
 
