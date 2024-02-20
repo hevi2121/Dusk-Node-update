@@ -131,7 +131,8 @@ nano /opt/dusk/services/rusk.conf.user
 
 #KADCAST_LISTEN_ADDRESS=private-ip:9000
 
-Örnek
+Örnek:
+
 KADCAST_PUBLIC_ADDRESS=34.168.241.213:9000
 
 KADCAST_LISTEN_ADDRESS=10.138.0.6:9000
