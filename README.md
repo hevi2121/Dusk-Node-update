@@ -18,14 +18,19 @@ Dusk teşvikli Node kurulum işlemi. Ödül alabilmeniz için;
 ## Sistem Güncelleme ve kütüphaneler
 ```shell
 sudo apt update && sudo apt upgrade -y
-```azılacak
+```
 
 
-## Rust kurulumu yapın
+## Rust kurulumu yapın  
+
 Kurulumu yapın
+
 ```shell
 curl --proto '=https' --tlsv1.2 -sSfL https://github.com/dusk-network/itn-installer/releases/download/v0.1.0/itn-installer.sh | sudo sh
 ```
+
+
+
 ## Cüzdan oluşturma ve Faucet işlemi 
 Discord gidin duyuru kanalına giderek sağ üst tarafta insan logosuna tıklayın
 Botu bulun ve !Dusk komutunu yazın ve sizden cüzdan adresi isteyecek cüzdan adresinizi yazın
