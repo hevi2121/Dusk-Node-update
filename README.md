@@ -58,9 +58,10 @@ rusk-wallet export -d /opt/dusk/conf -n consensus.keys
 sh /opt/dusk/bin/setup_consensus_pwd.sh
 ```
 
-##Port Ayarı İşlemleri
+## Port Ayarı İşlemleri
 
-#Sanal Sunucuda Yapılacak Port Ayarları 
+-Sanal Sunucuda Yapılacak Port Ayarları 
+
 -sanal makinenizden vpc network-firewall kısmını tıklayın(google could) 
 (Not:Diğer farklı şirket sunucuları olanlar güvenlik duvarı ayarlarına girecek)
 
