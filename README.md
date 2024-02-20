@@ -1,8 +1,8 @@
 # Dusk-Node-güncel
 
-(google could hatası çözümlü)
+(google could hatası-çözümlü)
 
-ÖDÜL DURUMU
+# Ödül Durumu
 
 Dusk teşvikli Node kurulum işlemi. Ödül alabilmeniz için;
 20 Şubat itibarıyla düğümlerin çalışır durumda olması gerekiyor. Bu, "sayıldığı" ve çalışma süresinin kaydedileceği zamandır
@@ -27,7 +27,9 @@ Dusk teşvikli Node kurulum işlemi. Ödül alabilmeniz için;
 | ----------------- | ----------------- | ----------------- |
 
 
+
 ## Sistem Güncelleme ve kütüphaneler
+
 ```shell
 sudo apt update && sudo apt upgrade -y
 ```
@@ -44,11 +46,18 @@ curl --proto '=https' --tlsv1.2 -sSfL https://github.com/dusk-network/itn-instal
 
 
 ## Cüzdan oluşturma ve Faucet işlemi 
-Discord gidin duyuru kanalına giderek sağ üst tarafta insan logosuna tıklayın
-Botu bulun ve !Dusk komutunu yazın ve sizden cüzdan adresi isteyecek cüzdan adresinizi yazın
-1100 adet tDusk gelecek cüzdanınızı kontrol edin(yogunluktan dolayı 4-12 saat arasında gelebiliyor tokenler)
+
+
+-Discord gidin duyuru kanalına giderek sağ üst tarafta insan logosuna tıklayın
+
+-Botu bulun ve !Dusk komutunu yazın ve sizden cüzdan adresi isteyecek cüzdan adresinizi yazın
+
+-1100 adet tDusk gelecek cüzdanınızı kontrol edin(yogunluktan dolayı 4-12 saat arasında gelebiliyor tokenler)
+
 - Aşağıdaki komutu girin ve cüzdan kelimelerinizi yazarak giriş yapın.
+- 
 - Not:Cüzdan kelimeleri ingilizce karakter ve hepsi küçük harfle olmalı.
+  
 - Şifrenizi belirleyin
   
 - Şifre tekrar girin
@@ -56,9 +65,11 @@ Botu bulun ve !Dusk komutunu yazın ve sizden cüzdan adresi isteyecek cüzdan a
 ```shell
 rusk-wallet restore
 ```
+
 - konsensüs anahtarını dışarı aktarmak için aşaıdaki komutu girin
 - Cüzdanınızın şifresini girin
 - Tekrar Şifrenizi girin
+
 
 ```shell
 rusk-wallet export -d /opt/dusk/conf -n consensus.keys
