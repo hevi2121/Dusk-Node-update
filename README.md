@@ -10,6 +10,15 @@ Dusk teşvikli Node kurulum işlemi. Ödül alabilmeniz için;
 250K DUSK, stake edilen tutara göre POAP airdrop'uyla dağıtılacak
 
 
+## Linkler
+
+ [volkanberra twitter](https://twitter.com/BerraVolkan)
+
+ [volkanberra github](https://github.com/Volkan081)
+ 
+ 
+
+
 ##Gereksinimler
 | 2-4 Gb Ram  | Ubuntu 22.04 |  50-100 Gb SSD | 
 | ----------------- | ----------------- | ----------------- |
