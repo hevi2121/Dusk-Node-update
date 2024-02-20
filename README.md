@@ -103,7 +103,9 @@ komutu girin ufw nin aktif olup olmadığını kontrol edin
 ufw status
 ```
 
-'ufw incantive' çıktısı aldıysanız 08 nolu koddan devam devam edin,eğer ufw active çıktısı aldıysanız aşağıdaki kodu girin
+'ufw incantive' çıktısı aldıysanız 08 nolu koddan devam devam edin;eğer ufw active çıktısı aldıysanız önce 59 nolu kod daha sonra 08 nolu koddan devam edin.
+
+59 nolu kod:aşağıdaki kodu girin
 
 ```shell
 ufw disable
@@ -149,7 +151,7 @@ curl --proto '=https' --tlsv1.2 -sSfL https://github.com/dusk-network/itn-instal
 
 ```
 
-2-Çalıştırma
+-Çalıştırma
 
 ```shell
 service rusk start
