@@ -80,12 +80,12 @@ komutu girin ufw nin aktif olup olmadığını kontrol edin
 ufw status
 ```
 
-'ufw incantive' çıktısıaldıysanız devam edin,eğer ufw active çıktısı aldıysanız aşağıdaki kodu girin
+'ufw incantive' çıktısı aldıysanız 08 nolu koddan devam devam edin,eğer ufw active çıktısı aldıysanız aşağıdaki kodu girin
 
 ```shell
 ufw disable
 ```
-aşağıdaki komutu girin 
+08 nolu kod:aşağıdaki komutu girin 
 
 ```shell
 nano /opt/dusk/services/rusk.conf.user
@@ -103,6 +103,40 @@ screende açılan ip ayarlarında
 -private-ip silip yerine dahili ip(Internal IP) yazın
 
 #KADCAST_PUBLIC_ADDRESS=public-ip:9000
+
 #KADCAST_LISTEN_ADDRESS=private-ip:9000
+
+Örnek
+KADCAST_PUBLIC_ADDRESS=34.168.241.213:9000
+
+KADCAST_LISTEN_ADDRESS=10.138.0.6:9000
+
+- Servisi Çalıştırın
+
+```shell
+service rusk start
+```
+
+## Senkronizasyon Kontrol
+
+Aşağıdaki kodu direk sunucuya yapıştırın bloklar yükseliyormu kontrol edin.
+
+```shell
+curl --location --request POST 'http://127.0.0.1:8080/02/Chain' --header 'Rusk-Version: 0.7.0-rc' --header 'Content-Type: application/json' --data-raw '{
+    "topic": "gql",
+    "data": "query { block(height: -1) { header { height } } }"
+}' | jq '.block.header.height'
+
+
+
+## Stake işlemleri
+
+- Cüzdanınıza Faucet üzerinden 1000 tDusk aldıysanız aşağıdaki komutu girerek stake işlemini başlatın
+
+```shell
+rusk-wallet stake --amt 1000 # Or however much you want to stake
+```
+
+- Stake sonrası aşağıdaki gibi bir ekran gelecek 30 block onayı verecek
 
 
